@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flickr Search</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../assets/ol3/js/ol-debug.js"></script>
+    <script>
+
+    // everything is the same as the previous sample, except at the end
+    // we load data from a JSON file instead of KML
+    var flickrSource = new ol.source.Vector();
+
+    function flickrStyle(feature) {
+      var style = new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 6,
+          stroke: new ol.style.Stroke({
+            color: 'white',
+            width: 2
+          }),
+          fill: new ol.style.Fill({
+            color: 'green'
+          })
+        })
+      });
+      return [style];
+    }
+
+    var flickrLayer = new ol.layer.Vector({
+      source: flickrSource,
+      style: flickrStyle
+    });
+
+    var layer = new ol.layer.Tile({
+      source: new ol.source.OSM()
+    });
+
+    var center = ol.proj.transform([0,0], 'EPSG:4326', 'EPSG:3857');
+
+    var view = new ol.View({
+      center: center,
+      zoom: 2
+    });
+
+    var map = new ol.Map({
+      target: 'map',
+      layers: [layer, flickrLayer],
+      view: view
+    });
+
+    // when jQuery has loaded the data, we can create features for each photo
+    function successHandler(data) {
+      // we need to transform the geometries into the view's projection
+      var transform = ol.proj.getTransform('EPSG:4326', 'EPSG:3857');
+      // loop over the items in the response
+      data.items.forEach(function(item) {
+        // create a new feature with the item as the properties
+        var feature = new ol.Feature(item);
+        // add a url property for later ease of access
+        feature.set('url', item.media.m);
+        // create an appropriate geometry and add it to the feature
+        var coordinate = transform([parseFloat(item.longitude), parseFloat(item.latitude)]);
+        var geometry = new ol.geom.Point(coordinate);
+        feature.setGeometry(geometry);
+        // add the feature to the source
+        flickrSource.addFeature(feature);
+      });
+    }
+
+    $.ajax({
+      url: '../assets/data/flickr_data.json',
+      dataType: 'jsonp',
+      jsonpCallback: 'jsonFlickrFeed',
+      success: successHandler
+    });
+
+    </script>
+  </body>
+</html>

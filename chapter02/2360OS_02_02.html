@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>OpenLayers Overlays</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div id="overlay" style="background-color: white; border-radius: 10px; border: 1px solid black; padding: 5px 10px;">
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+
+        var layer = new ol.layer.Tile({
+          source: new ol.source.OSM()
+        });
+
+        var center = ol.proj.transform([-1.812, 52.443], 'EPSG:4326', 'EPSG:3857');
+
+        var overlay = new ol.Overlay({
+          element: document.getElementById('overlay'),
+          positioning: 'bottom-center'
+        });
+
+        var view = new ol.View({
+          center: center,
+          zoom: 6
+        });
+
+        var map = new ol.Map({
+          target: 'map',
+          layers: [layer],
+          view: view
+        });
+
+        // register an event handler for the click event
+        map.on('click', function(event) {
+          // extract the spatial coordinate of the click event in map projection units
+          var coord = event.coordinate;
+          // transform it to decimal degrees
+          var degrees = ol.proj.transform(coord, 'EPSG:3857', 'EPSG:4326');
+          // format a human readable version
+          var hdms = ol.coordinate.toStringHDMS(degrees);
+          // update the overlay element's content
+          var element = overlay.getElement();
+          element.innerHTML = hdms;
+          // position the element (using the coordinate in the map's projection)
+          overlay.setPosition(coord);
+          // and add it to the map
+          map.addOverlay(overlay);
+        });
+    </script>
+  </body>
+</html>

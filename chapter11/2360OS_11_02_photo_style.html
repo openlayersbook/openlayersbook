@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flickr Search</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../assets/ol3/js/ol-debug.js"></script>
+    <script>
+
+    // the source of our photos is a KML file
+    var flickrSource = new ol.source.KML({
+      url: '../assets/data/flickr_data.kml',
+      projection: 'EPSG:3857',
+      extractStyles: false
+    });
+
+    // use a style function to replace the styles in the KML file
+    // this is a placeholder for now
+    function flickrStyle(feature) {
+      var style = new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 6,
+          stroke: new ol.style.Stroke({
+            color: 'white',
+            width: 2
+          }),
+          fill: new ol.style.Fill({
+            color: 'green'
+          })
+        })
+      });
+      return [style];
+    }
+
+    var flickrLayer = new ol.layer.Vector({
+      source: flickrSource,
+      style: flickrStyle
+    });
+
+    var layer = new ol.layer.Tile({
+      source: new ol.source.OSM()
+    });
+
+    var center = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+
+    var view = new ol.View({
+      center: center,
+      zoom: 2
+    });
+
+    var map = new ol.Map({
+      target: 'map',
+      layers: [layer, flickrLayer],
+      view: view
+    });
+
+    </script>
+  </body>
+</html>

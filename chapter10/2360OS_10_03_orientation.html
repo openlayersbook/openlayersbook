@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Map Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="map" class="full-map"></div>
+    <div id="location" class="marker"><span class="icon-arrow-up"></span></div>
+    <script src="../assets/ol3/js/ol-debug.js"></script>
+    <script>
+      var layer = new ol.layer.Tile({
+        source: new ol.source.OSM()
+      });
+      var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+      var view = new ol.View({
+        center: london,
+        zoom: 6
+      });
+      var map = new ol.Map({
+        target: 'map',
+        layers: [layer],
+        view: view
+      });
+      // set up geolocation to track our position
+      var geolocation = new ol.Geolocation({
+        tracking: true
+      });
+      // bind it to the view's projection and update the view as we move
+      geolocation.bindTo('projection', view);
+      geolocation.on('change:position', function() {
+        view.setCenter(geolocation.getPosition());
+      });
+      // add a marker to display the current location
+      var marker = new ol.Overlay({
+        element: document.getElementById('location'),
+        positioning: 'center-center'
+      });
+      map.addOverlay(marker);
+      // and bind it to the geolocation's position updates
+      marker.bindTo('position', geolocation);
+
+      // create a new device orientation object set to track the device
+      var deviceOrientation = new ol.DeviceOrientation({
+        tracking: true
+      });
+      // when the device changes heading, rotate the view so that
+      // 'up' on the device points the direction we are facing
+      deviceOrientation.on('change:heading', onChangeHeading);
+      function onChangeHeading(event) {
+        var heading = event.target.getHeading();
+        view.setRotation(-heading);
+      }
+    </script>
+  </body>
+</html>

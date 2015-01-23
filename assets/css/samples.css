@@ -1,0 +1,106 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  height: 500px;
+  width: 100%;
+  background-color: #b5d0d0;
+}
+
+.half-map {
+  float: left;
+  height: 500px;
+  width: 50%;
+  background-color: #b5d0d0;
+}
+
+.full-map {
+  width: 100%;
+  height: 100%;
+  background-color: #b5d0d0;
+}
+
+.marker {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+
+#popup {
+  background: red;
+}
+
+#myposition > .ol-mouse-position {
+  position: relative;
+  margin-left:20px;
+  font-size: 30px;
+}
+
+.export-geojson {
+  position: absolute;
+  top: 65px;
+  left: 8px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.ol-touch .export-geojson {
+  top: 80px;
+}
+
+.export-geojson a {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  margin: 1px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  height: 22px;
+  width: 22px;
+  background: rgba(0,60,136,0.5);
+}
+
+.ol-touch .export-geojson a {
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  line-height: 26px;
+}
+
+.export-geojson a:hover {
+  background: rgba(0,60,136,0.7);
+}
+
+.list-group-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.popover {
+  z-index: auto;
+  width: 240px;
+}
+
+.popover-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.popover-content {
+  height: 260px;
+  overflow-y: auto;
+}
+
+.popover-content img {
+  max-width: 208px;
+}

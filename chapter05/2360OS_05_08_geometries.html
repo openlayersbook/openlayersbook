@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Geometry Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div id="closestFeature"></div>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+      var countries = new ol.layer.Vector({
+        source: new ol.source.GeoJSON({
+          projection: 'EPSG:3857',
+          url: '../assets/data/countries.geojson'
+        })
+      });
+      var view = new ol.View({
+        projection: 'EPSG:3857'
+      });
+      var map = new ol.Map({
+        target: 'map',
+        layers: [countries],
+        view: view
+      });
+
+      // zoom to the extent of the vector source once the map has been rendered
+      // for the first time
+      map.once('postrender', function() {
+        view.fitExtent(countries.getSource().getExtent(), map.getSize());
+      });
+
+      // capture mouse move events so we can 'look' at the feature
+      // underneath the mouse
+      map.on('pointermove', onMouseMove);
+
+      function onMouseMove(browserEvent) {
+        // the mousemove event sends a browser event object that contains
+        // the geographic coordinate the event happened at
+        var coordinate = browserEvent.coordinate;
+        // we can get the closest feature from the source
+        var feature = countries.getSource().getClosestFeatureToCoordinate(coordinate);
+        // to compute the area of a feature, we need to get it's geometry and do
+        // something a little different depeneding on the geometry type.
+        var geometry = feature.getGeometry();
+        var area;
+        switch (geometry.getType()) {
+        case 'MultiPolygon':
+          // for multi-polygons, we need to add the area of each polygon
+          area = geometry.getPolygons().reduce(function(left, right) {
+            return left + right.getArea();
+          }, 0);
+          break;
+        case 'Polygon':
+          // for polygons, we just get the area
+          area = geometry.getArea();
+          break;
+        default:
+          // no other geometry types have area as far as we are concerned
+          area = 0;
+        }
+        area = area / 1000000;
+        // display the country name and area now
+        var text = feature.getProperties().name + ' ' + area.toFixed(0) + ' km<sup>2</sup>';
+        document.getElementById('closestFeature').innerHTML = text;
+      }
+
+    </script>
+  </body>
+</html>

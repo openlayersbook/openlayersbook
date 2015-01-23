@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WMS with custom projection</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+
+    var projection = new ol.proj.Projection({
+      code: 'EPSG:2154',
+      units: 'm'
+    });
+
+    var layers = [
+      new ol.layer.Image({
+        source: new ol.source.ImageWMS({
+          url: 'http://geoservices.brgm.fr/geologie',
+          attributions: [new ol.Attribution({
+            html: '&copy; ' +
+              'BRGM (French USGS equivalent)'
+            })
+          ],
+          params: {
+            'LAYERS': 'SCAN_F_GEOL1M',
+            'VERSION': '1.1.1'
+          }
+        })
+      })
+    ];
+
+    var map = new ol.Map({
+      layers: layers,
+      target: 'map',
+      view: new ol.View({
+        projection: projection,
+        center: [755520.187986, 6587896.855407],
+        zoom: 6
+      })
+    });
+    </script>
+  </body>
+</html>

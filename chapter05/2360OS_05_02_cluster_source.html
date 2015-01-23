@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Vector Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+      // set up a vector source to read the geojson data
+      var originalSource = new ol.source.GeoJSON({
+        url: '../assets/data/cluster.geojson'
+      });
+
+      // create a layer from it so we can visualize the original data
+      var originalLayer = new ol.layer.Vector({
+        source: originalSource
+      });
+
+      // a clustered source is configured with another vector source that it
+      // operates on
+      var clusterSource = new ol.source.Cluster({
+        source: originalSource
+      });
+
+      // it needs a layer too
+      var clusterLayer = new ol.layer.Vector({
+        source: clusterSource
+      });
+
+      // some data to use as the background
+      var vectorSource = new ol.source.GeoJSON({
+        projection: 'EPSG:3857',
+        url: '../assets/data/countries.geojson'
+      });
+
+      var vectorLayer = new ol.layer.Vector({
+        source: vectorSource
+      });
+
+      var center = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+
+      var view = new ol.View({
+        center: center,
+        zoom: 2
+      });
+
+      var map = new ol.Map({
+        target: 'map',
+        layers: [vectorLayer, clusterLayer],
+        view: view
+      });
+    </script>
+  </body>
+</html>

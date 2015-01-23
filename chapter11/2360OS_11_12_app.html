@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flickr Search</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div id="search" style="position: absolute; top: 10px; right: 10px; padding: 5px; background-color: rgba(255,255,255,0.5);">
+      <input type="text" placeholder="Search photos by tag(s)" style="width: 200px">
+      <button type="button">Search</button>
+    </div>
+    <div id="photo-info"></div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <!-- move the javascript into a separate file so we can optimize it -->
+    <script src="2360OS_11_12_app.js"></script>
+    <script type="text/html" id="photo-template">
+      <a href="{link}" target="_blank" title="Click to open photo in new tab"><img src="{url}" style="float: left"></a><br>
+      <p>Taken by <a href="http://www.flickr.com/people/{author_id}" target="_blank" title="Click to view author details in new tab">{author}</a> on {date_taken} at lat: {latitude} lon: {longitude}</p><br>
+      <p>Tagged in <b>{tags}</b></p>
+    </script>
+  </body>
+</html>

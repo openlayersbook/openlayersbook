@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Map Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div class="map">
+      <div id="right" class="half-map"></div>
+      <div id="left" class="half-map"></div>
+      <div class="panel">
+        <button onclick="changeTarget();">Change Target</button>
+      </div>
+    </div>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+        var layer = new ol.layer.Tile({
+          source: new ol.source.OSM()
+        });
+        var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+        var view = new ol.View({
+          center: london,
+          zoom: 6
+        });
+        var map = new ol.Map({
+          target: 'right',
+          layers: [layer],
+          view: view
+        });
+
+        // this function is called when the button is clicked.
+        // Move the map to another div based on its current target.
+        function changeTarget() {
+          var target = map.getTarget();
+          if (target == 'left') {
+            map.setTarget('right');
+          } else {
+            map.setTarget('left');
+          }
+        }
+    </script>
+  </body>
+</html>

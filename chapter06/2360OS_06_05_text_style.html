@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Vector Style Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+      // the text style has a lot of properties for
+      // alignment and positioning
+      var style = [new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 6,
+          stroke: new ol.style.Stroke({
+            color: [0,0,0,1]
+          }),
+          fill: new ol.style.Fill({
+            color: [0,0,0,0.5]
+          })
+        }),
+        text: new ol.style.Text({
+          font: '20px Verdana',
+          text: 'Null Island',
+          textAlign: 'center',
+          textBaseline: 'alphabetic',
+          offsetY: -10,
+          stroke: new ol.style.Stroke({
+            color: 'rgba(255,0,0,0.2)',
+            width: 5
+          }),
+          fill: new ol.style.Fill({
+            color: 'rgba(255,0,0,1)'
+          })
+        })
+      }), new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 6,
+          stroke: new ol.style.Stroke({
+            color: [255,255,255,1]
+          }),
+          fill: new ol.style.Fill({
+            color: [255,255,255,0.5]
+          })
+        }),
+        text: new ol.style.Text({
+          font: '20px Verdana',
+          text: 'Null Island',
+          textAlign: 'center',
+          textBaseline: 'alphabetic',
+          offsetY: 10,
+          stroke: new ol.style.Stroke({
+            color: 'rgba(0,0,0,0.2)',
+            width: 5
+          }),
+          fill: new ol.style.Fill({
+            color: 'rgba(0,0,0,1)'
+          })
+        })
+      })];
+      var nullIsland = new ol.layer.Vector({
+        source: new ol.source.Vector({
+          features: [new ol.Feature({
+            geometry: new ol.geom.Point([0,0])
+          })]
+        }),
+        style: style
+      });
+      var countries = new ol.layer.Vector({
+        source: new ol.source.GeoJSON({
+          projection: 'EPSG:3857',
+          url: '../assets/data/countries.geojson'
+        })
+      });
+      var center = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+      var view = new ol.View({
+        center: center,
+        zoom: 1
+      });
+      var map = new ol.Map({
+        target: 'map',
+        layers: [countries, nullIsland],
+        view: view
+      });
+    </script>
+  </body>
+</html>

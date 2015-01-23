@@ -1,0 +1,25 @@
+{
+  "name": "openlayers_book_samples",
+  "version": "0.0.1",
+  "description": "Mini server to play with features edition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://openlayersbook@bitbucket.org/openlayersbook/openlayers_book_samples.git"
+  },
+  "author": "ThomasG77",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.3.0",
+    "escape-html": "^1.0.1",
+    "express": "^4.4.1",
+    "minimist": "^0.2.0",
+    "morgan": "^1.1.1",
+    "parseurl": "^1.0.1",
+    "send": "^0.4.1",
+    "serve-index": "^1.1.0"
+  }
+}

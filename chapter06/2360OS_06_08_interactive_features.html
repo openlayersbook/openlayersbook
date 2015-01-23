@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Geometry Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol-debug.js"></script>
+    <script>
+
+      var countries = new ol.layer.Vector({
+        source: new ol.source.GeoJSON({
+          projection: 'EPSG:3857',
+          url: '../assets/data/countries.geojson'
+        })
+      });
+
+      var center = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+
+      var view = new ol.View({
+        center: center,
+        zoom: 1
+      });
+
+      var map = new ol.Map({
+        target: 'map',
+        layers: [countries],
+        view: view
+      });
+
+      // we want to create text styles based on properties coming from a feature
+      // to do this, we need to create a new style for each string that needs to
+      // be represented.  All the text styles will share the same properties
+      // except for the actual text itself. The properties can be set up ahead
+      // of time in an object literal
+      var baseTextStyle = {
+        font: '12px Calibri,sans-serif',
+        textAlign: 'center',
+        offsetY: -15,
+        fill: new ol.style.Fill({
+          color: [0,0,0,1]
+        }),
+        stroke: new ol.style.Stroke({
+          color: [255,255,255,0.5],
+          width: 4
+        })
+      };
+
+      // when we move the mouse over a feature, we can change its style to
+      // highlight it temporarily
+      var highlightStyle = new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: [255,0,0,0.6],
+          width: 2
+        }),
+        fill: new ol.style.Fill({
+          color: [255,0,0,0.2]
+        }),
+        zIndex: 1
+      });
+
+      // the style function for the feature overlay returns
+      // a text style for point features and the highlight
+      // style for other features (polygons in this case)
+      function styleFunction(feature, resolution) {
+        var style;
+        var geom = feature.getGeometry();
+        if (geom.getType() == 'Point') {
+          var text = feature.get('text');
+          baseTextStyle.text = text;
+          // this is inefficient as it could create new style objects for the
+          // same text.
+          // A good exercise to see if you understand would be to add caching
+          // of this text style
+          var isoCode = feature.get('isoCode').toLowerCase();
+          style = new ol.style.Style({
+            text: new ol.style.Text(baseTextStyle),
+            image: new ol.style.Icon({
+              src: '../assets/img/flags/'+isoCode+'.png'
+            }),
+            zIndex: 2
+          });
+        } else {
+          style = highlightStyle;
+        }
+
+        return [style];
+      }
+
+      var featureOverlay = new ol.FeatureOverlay({
+        map: map,
+        style: styleFunction
+      });
+
+      // when the mouse moves over the map, we get an event that we can use
+      // to create a new feature overlay from
+      map.on('pointermove', function(browserEvent) {
+        // first clear any existing features in the overlay
+        featureOverlay.getFeatures().clear();
+        var coordinate = browserEvent.coordinate;
+        var pixel = browserEvent.pixel;
+        // then for each feature at the mouse position ...
+        map.forEachFeatureAtPixel(pixel, function(feature, layer) {
+          // check the layer property, if it is not set then it means we
+          // are over an OverlayFeature and we can ignore this feature
+          if (!layer) {
+            return;
+          }
+          // test the feature's geometry type and compute a reasonable point
+          // at which to display the text.
+          var geometry = feature.getGeometry();
+          var point;
+          switch (geometry.getType()) {
+          case 'MultiPolygon':
+            var poly = geometry.getPolygons().reduce(function(left, right) {
+              return left.getArea() > right.getArea() ? left : right;
+            });
+            point = poly.getInteriorPoint().getCoordinates();
+            break;
+          case 'Polygon':
+            point = geometry.getInteriorPoint().getCoordinates();
+            break;
+          default:
+            point = geometry.getClosestPoint(coordinate);
+          }
+          // create a new feature to display the text
+          textFeature = new ol.Feature({
+            geometry: new ol.geom.Point(point),
+            text: feature.get('name'),
+            isoCode: feature.get('iso_a2').toLowerCase()
+          });
+          // and add it to the featureOverlay.  Also add the feature itself
+          // so the country gets outlined
+          featureOverlay.addFeature(textFeature);
+          featureOverlay.addFeature(feature);
+        });
+      });
+
+    </script>
+  </body>
+</html>

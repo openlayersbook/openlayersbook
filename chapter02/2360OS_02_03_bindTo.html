@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Map Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <input type="checkbox" id="visible" checked> Toggle Layer Visibility
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+      var layer = new ol.layer.Tile({
+        source: new ol.source.OSM()
+      });
+      var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+      var view = new ol.View({
+        center: london,
+        zoom: 6
+      });
+      var map = new ol.Map({
+        target: 'map',
+        layers: [layer],
+        view: view
+      });
+      // create a DOM Input helper for the checkbox
+      var visible = new ol.dom.Input(document.getElementById('visible'));
+      // and bind its 'checked' property to the layer's 'visible' property
+      visible.bindTo('checked', layer, 'visible');
+    </script>
+  </body>
+</html>

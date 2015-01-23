@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1" xmlns:flickr="urn:flickr:">
+
+
+<NetworkLinkControl>
+	<minRefreshPeriod>900</minRefreshPeriod>
+</NetworkLinkControl>
+
+<Document>
+
+	<name>Recent Uploads tagged bird, with geodata</name>
+	<open>1</open>
+
+	
+	
+	<Style id="normal/photo/14991623541">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3902/14991623541_5e78403aff_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14991623541">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3902/14991623541_5e78403aff_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14991623541">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14991623541</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14991623541</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14991571391">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3916/14991571391_85d138e947_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14991571391">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3916/14991571391_85d138e947_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14991571391">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14991571391</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14991571391</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14808042058">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5564/14808042058_a5461323e3_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14808042058">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5564/14808042058_a5461323e3_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14808042058">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14808042058</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14808042058</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14991301551">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3842/14991301551_0b5c385448_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14991301551">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3842/14991301551_0b5c385448_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14991301551">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14991301551</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14991301551</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14971315126">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5568/14971315126_13aab0c6f6_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14971315126">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5568/14971315126_13aab0c6f6_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14971315126">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14971315126</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14971315126</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14971272036">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3886/14971272036_6efbf4012d_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14971272036">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3886/14971272036_6efbf4012d_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14971272036">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14971272036</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14971272036</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14807654068">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5567/14807654068_bf04b47187_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14807654068">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5567/14807654068_bf04b47187_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14807654068">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14807654068</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14807654068</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14807595257">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5593/14807595257_6c26c36e19_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14807595257">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5593/14807595257_6c26c36e19_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14807595257">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14807595257</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14807595257</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14807590747">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3886/14807590747_6b5acbf940_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14807590747">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3886/14807590747_6b5acbf940_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14807590747">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14807590747</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14807590747</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14971130576">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5593/14971130576_8c9bf75e51_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14971130576">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5593/14971130576_8c9bf75e51_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14971130576">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14971130576</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14971130576</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14991019981">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5572/14991019981_7d3413a994_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14991019981">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5572/14991019981_7d3413a994_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14991019981">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14991019981</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14991019981</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14939530505">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3885/14939530505_56d7252a32_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14939530505">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3885/14939530505_56d7252a32_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14939530505">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14939530505</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14939530505</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14807072518">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5556/14807072518_366abd81f5_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14807072518">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5556/14807072518_366abd81f5_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14807072518">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14807072518</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14807072518</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14970559536">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3875/14970559536_dea9fa167d_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14970559536">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3875/14970559536_dea9fa167d_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14970559536">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14970559536</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14970559536</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14806910550">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5552/14806910550_7b676ee140_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14806910550">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5552/14806910550_7b676ee140_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14806910550">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14806910550</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14806910550</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14993265845">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3908/14993265845_513f5e6a6d_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14993265845">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm4.staticflickr.com/3908/14993265845_513f5e6a6d_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14993265845">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14993265845</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14993265845</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14806739798">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5577/14806739798_d650022743_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14806739798">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5577/14806739798_d650022743_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14806739798">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14806739798</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14806739798</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14806619310">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5570/14806619310_ecb76b6f0e_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14806619310">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5570/14806619310_ecb76b6f0e_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14806619310">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14806619310</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14806619310</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14989947171">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5582/14989947171_b0eafa606b_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14989947171">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5582/14989947171_b0eafa606b_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14989947171">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14989947171</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14989947171</styleUrl>
+      </Pair>
+    </StyleMap>
+	<Style id="normal/photo/14992665882">
+		<LabelStyle>
+			<color>00ffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5585/14992665882_f8f9d64f37_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<Style id="highlight/photo/14992665882">
+		<LabelStyle>
+			<color>ffffffff</color>
+			<scale>1</scale>
+		</LabelStyle>
+		<IconStyle>
+			<scale>2</scale>
+			<hotSpot x="0.5"  y="0.5" xunits="fraction" yunits="fraction"/>
+			<Icon>
+				<href>http://farm6.staticflickr.com/5585/14992665882_f8f9d64f37_s.jpg</href>
+			</Icon>
+		</IconStyle>
+	</Style>	
+	<StyleMap id="styleMap/photo/14992665882">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#normal/photo/14992665882</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#highlight/photo/14992665882</styleUrl>
+      </Pair>
+    </StyleMap>
+
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14991623541</styleUrl>
+			<name>Osprey in Flight</name>
+			<Snippet maxLines="4">
+				
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/look-what-i-took/14991623541/"><img src="http://farm4.staticflickr.com/3902/14991623541_5e78403aff.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/look-what-i-took/14991623541/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/look-what-i-took/14991623541/">Open photo page</a></td></tr></table>
+					<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> May 13th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=93908212@N07&amp;format=kml_nl&amp;lang=en-us"><b>Angela Redmon</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=blue&amp;format=kml_nl&amp;lang=en-us">blue</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=sky&amp;format=kml_nl&amp;lang=en-us">sky</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=birds&amp;format=kml_nl&amp;lang=en-us">birds</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>-122.679535,45.611347</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14991571391</styleUrl>
+			<name>a good canvas to fly</name>
+			<Snippet maxLines="4">
+				
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/119628365@N06/14991571391/"><img src="http://farm4.staticflickr.com/3916/14991571391_85d138e947.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/119628365@N06/14991571391/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/119628365@N06/14991571391/">Open photo page</a></td></tr></table>
+					<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> June 12th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=119628365@N06&amp;format=kml_nl&amp;lang=en-us"><b>fitzgibbon.andy</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=sky&amp;format=kml_nl&amp;lang=en-us">sky</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=cloud&amp;format=kml_nl&amp;lang=en-us">cloud</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=mizen&amp;format=kml_nl&amp;lang=en-us">mizen</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>-9.816627,51.45069</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14808042058</styleUrl>
+			<name></name>
+			<Snippet maxLines="4">
+				Nikon D5100   Nikon 55-300mm f/4.5-5.6G
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/61985257@N08/14808042058/"><img src="http://farm6.staticflickr.com/5564/14808042058_a5461323e3.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/61985257@N08/14808042058/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/61985257@N08/14808042058/">Open photo page</a></td></tr></table>
+					Nikon D5100   Nikon 55-300mm f/4.5-5.6G<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 9th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=61985257@N08&amp;format=kml_nl&amp;lang=en-us"><b>Ji-</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=lake&amp;format=kml_nl&amp;lang=en-us">lake</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=nikon&amp;format=kml_nl&amp;lang=en-us">nikon</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=oiseau&amp;format=kml_nl&amp;lang=en-us">oiseau</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>-72.062652,45.268861</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14991301551</styleUrl>
+			<name>Osprey_AnalogEfex</name>
+			<Snippet maxLines="4">
+				Actual size with a switch to profile from landscape and an 8.5x11 crop. Taken RAW with a $329 Powershot SX50 at full zoom. Noise reduction in Dfine by NIK and final touches in Analog Efex by NIK. I probably will print this on some really inexpensive Ilford glossy 8.5x11 paper and laminate it with a textured uv protective film. Then I will make a mounting panel with stained hardwood sides and 1/4&amp;quot; birch plywood front. I will attach with Elmer's wood glue.
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/johnrwbirds/14991301551/"><img src="http://farm4.staticflickr.com/3842/14991301551_0b5c385448.jpg" /></a>
+					<table border="0" padding="0" width="386"><tr><td align="right"><a href="http://www.flickr.com/photos/johnrwbirds/14991301551/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/johnrwbirds/14991301551/">Open photo page</a></td></tr></table>
+					Actual size with a switch to profile from landscape and an 8.5x11 crop. Taken RAW with a $329 Powershot SX50 at full zoom. Noise reduction in Dfine by NIK and final touches in Analog Efex by NIK. I probably will print this on some really inexpensive Ilford glossy 8.5x11 paper and laminate it with a textured uv protective film. Then I will make a mounting panel with stained hardwood sides and 1/4&amp;quot; birch plywood front. I will attach with Elmer's wood glue.<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 10th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=78230223@N08&amp;format=kml_nl&amp;lang=en-us"><b>johnwilliamsnaturephotography.com</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=art&amp;format=kml_nl&amp;lang=en-us">art</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=birds&amp;format=kml_nl&amp;lang=en-us">birds</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=software&amp;format=kml_nl&amp;lang=en-us">software</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>-121.204757,44.24191</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14971315126</styleUrl>
+			<name>Cheeky Whiskey Jack</name>
+			<Snippet maxLines="4">
+				At the middle lake, we stopped for a bite to eat, but one of these cheeky birds stole from Harry's hand, the last of his muslei bar!<br />
+We spent a couple of days at Whistler. On one of the days we did a walk to Joffre Lakes, about an hour's drive further along from Whistler.<br />
+There is a series of three lakes, all with varying colours and a glacier above the top (third) lake. <br />
+The trail is being redone is parts as it is a very popular walk.
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/7272097@N08/14971315126/"><img src="http://farm6.staticflickr.com/5568/14971315126_13aab0c6f6.jpg" /></a>
+					<table border="0" padding="0" width="354"><tr><td align="right"><a href="http://www.flickr.com/photos/7272097@N08/14971315126/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/7272097@N08/14971315126/">Open photo page</a></td></tr></table>
+					At the middle lake, we stopped for a bite to eat, but one of these cheeky birds stole from Harry's hand, the last of his muslei bar!<br />
+We spent a couple of days at Whistler. On one of the days we did a walk to Joffre Lakes, about an hour's drive further along from Whistler.<br />
+There is a series of three lakes, all with varying colours and a glacier above the top (third) lake. <br />
+The trail is being redone is parts as it is a very popular walk.<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> July 7th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=7272097@N08&amp;format=kml_nl&amp;lang=en-us"><b>NettyA</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=travel&amp;format=kml_nl&amp;lang=en-us">travel</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=trees&amp;format=kml_nl&amp;lang=en-us">trees</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=canada&amp;format=kml_nl&amp;lang=en-us">canada</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=mountains&amp;format=kml_nl&amp;lang=en-us">mountains</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>-122.487344,50.359589</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14971272036</styleUrl>
+			<name>Nacunda Nighthawk (Chordeiles nacunda) - male</name>
+			<Snippet maxLines="4">
+				The &lt;b&gt;Nacunda Nighthawk&lt;/b&gt; (&lt;i&gt;Chordeiles nacunda&lt;/i&gt;) is a species of nightjar in the Caprimulgidae family native to South America. Its natural habitats are dry savanna, subtropical or tropical seasonally wet or flooded lowland grassland, and heavily degraded former forest.<br />
+<br />
+The nacunda nighthawk is the largest species of nightjar in the Neotropics, and is one of the largest in the world. In addition to its large size, this species also is noteworthy for its partially diurnal habits. Though a capable aerial forager, the nacunda nighthawk spends a considerable amount of time on the ground; it has notably long tarsi for a nightjar, and is more likely than other species to be seen standing on the ground (rather than resting on the surface).<br />
+<br />
+The nacunda nighthawk is distributed throughout central and eastern South America where it can be found in savanna, grassland, river edges, and disturbed habitats, but is much less common in western Amazonia than elsewhere. Its very large size, large head, and pale body with highly contrasting black primaries make the nacunda nighthawk easy to identify.<br />
+<br />
+(from Wikipedia)<br />
+<br />
+Known in Brazil as &amp;quot;corucao&amp;quot;.
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/21182099@N05/14971272036/"><img src="http://farm4.staticflickr.com/3886/14971272036_6efbf4012d.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/21182099@N05/14971272036/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/21182099@N05/14971272036/">Open photo page</a></td></tr></table>
+					The &lt;b&gt;Nacunda Nighthawk&lt;/b&gt; (&lt;i&gt;Chordeiles nacunda&lt;/i&gt;) is a species of nightjar in the Caprimulgidae family native to South America. Its natural habitats are dry savanna, subtropical or tropical seasonally wet or flooded lowland grassland, and heavily degraded former forest.<br />
+<br />
+The nacunda nighthawk is the largest species of nightjar in the Neotropics, and is one of the largest in the world. In addition to its large size, this species also is noteworthy for its partially diurnal habits. Though a capable aerial forager, the nacunda nighthawk spends a considerable amount of time on the ground; it has notably long tarsi for a nightjar, and is more likely than other species to be seen standing on the ground (rather than resting on the surface).<br />
+<br />
+The nacunda nighthawk is distributed throughout central and eastern South America where it can be found in savanna, grassland, river edges, and disturbed habitats, but is much less common in western Amazonia than elsewhere. Its very large size, large head, and pale body with highly contrasting black primaries make the nacunda nighthawk easy to identify.<br />
+<br />
+(from Wikipedia)<br />
+<br />
+Known in Brazil as &amp;quot;corucao&amp;quot;.<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 16th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=21182099@N05&amp;format=kml_nl&amp;lang=en-us"><b>Rodrigo Conte</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=brazil&amp;format=kml_nl&amp;lang=en-us">brazil</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=male&amp;format=kml_nl&amp;lang=en-us">male</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=brasil&amp;format=kml_nl&amp;lang=en-us">brasil</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>-47.921504,-15.773845</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14807654068</styleUrl>
+			<name>Rehearsing My Angry Birds Stare</name>
+			<Snippet maxLines="4">
+				A final look at this pair of Scaly-breasted Lorikeets.
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/34655572@N06/14807654068/"><img src="http://farm6.staticflickr.com/5567/14807654068_bf04b47187.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/34655572@N06/14807654068/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/34655572@N06/14807654068/">Open photo page</a></td></tr></table>
+					A final look at this pair of Scaly-breasted Lorikeets.<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 6th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=34655572@N06&amp;format=kml_nl&amp;lang=en-us"><b>gecko47</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=birds&amp;format=kml_nl&amp;lang=en-us">birds</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=birdbath&amp;format=kml_nl&amp;lang=en-us">birdbath</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=lorikeet&amp;format=kml_nl&amp;lang=en-us">lorikeet</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>153.021268,-27.450928</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14807595257</styleUrl>
+			<name>gray-headed fish-eagle  灰头鱼雕</name>
+			<Snippet maxLines="4">
+				Sri Lanka
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/wanghc732/14807595257/"><img src="http://farm6.staticflickr.com/5593/14807595257_6c26c36e19.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/wanghc732/14807595257/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/wanghc732/14807595257/">Open photo page</a></td></tr></table>
+					Sri Lanka<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 6th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=96153794@N02&amp;format=kml_nl&amp;lang=en-us"><b>wanghc732</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=birds&amp;format=kml_nl&amp;lang=en-us">birds</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=eagle&amp;format=kml_nl&amp;lang=en-us">eagle</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=watcher&amp;format=kml_nl&amp;lang=en-us">watcher</a><br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>81.215494,6.175669</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14807590747</styleUrl>
+			<name>gray-headed fish-eagle  灰头鱼雕</name>
+			<Snippet maxLines="4">
+				Sri Lanka
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/wanghc732/14807590747/"><img src="http://farm4.staticflickr.com/3886/14807590747_6b5acbf940.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/wanghc732/14807590747/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/wanghc732/14807590747/">Open photo page</a></td></tr></table>
+					Sri Lanka<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 6th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=96153794@N02&amp;format=kml_nl&amp;lang=en-us"><b>wanghc732</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=birds&amp;format=kml_nl&amp;lang=en-us">birds</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=eagle&amp;format=kml_nl&amp;lang=en-us">eagle</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=watcher&amp;format=kml_nl&amp;lang=en-us">watcher</a><br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>81.215508,6.17565</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14971130576</styleUrl>
+			<name>gray-headed fish-eagle  灰头鱼雕</name>
+			<Snippet maxLines="4">
+				Sri Lanka
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/wanghc732/14971130576/"><img src="http://farm6.staticflickr.com/5593/14971130576_8c9bf75e51.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/wanghc732/14971130576/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/wanghc732/14971130576/">Open photo page</a></td></tr></table>
+					Sri Lanka<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 6th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=96153794@N02&amp;format=kml_nl&amp;lang=en-us"><b>wanghc732</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=birds&amp;format=kml_nl&amp;lang=en-us">birds</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=eagle&amp;format=kml_nl&amp;lang=en-us">eagle</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=watcher&amp;format=kml_nl&amp;lang=en-us">watcher</a><br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>81.215508,6.17565</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14991019981</styleUrl>
+			<name>gray-headed fish-eagle  灰头鱼雕</name>
+			<Snippet maxLines="4">
+				Sri Lanka
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/wanghc732/14991019981/"><img src="http://farm6.staticflickr.com/5572/14991019981_7d3413a994.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/wanghc732/14991019981/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/wanghc732/14991019981/">Open photo page</a></td></tr></table>
+					Sri Lanka<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 6th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=96153794@N02&amp;format=kml_nl&amp;lang=en-us"><b>wanghc732</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=birds&amp;format=kml_nl&amp;lang=en-us">birds</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=eagle&amp;format=kml_nl&amp;lang=en-us">eagle</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=watcher&amp;format=kml_nl&amp;lang=en-us">watcher</a><br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>81.215497,6.175638</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14939530505</styleUrl>
+			<name>IMG_0464 I got nothing for you, baby!</name>
+			<Snippet maxLines="4">
+				HFF from ibis #082 and greentigger
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/11994078@N04/14939530505/"><img src="http://farm4.staticflickr.com/3885/14939530505_56d7252a32.jpg" /></a>
+					<table border="0" padding="0" width="408"><tr><td align="right"><a href="http://www.flickr.com/photos/11994078@N04/14939530505/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/11994078@N04/14939530505/">Open photo page</a></td></tr></table>
+					HFF from ibis #082 and greentigger<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 15th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=11994078@N04&amp;format=kml_nl&amp;lang=en-us"><b>pinktigger</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=italy&amp;format=kml_nl&amp;lang=en-us">italy</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=green&amp;format=kml_nl&amp;lang=en-us">green</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=me&amp;format=kml_nl&amp;lang=en-us">me</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>13.084761,46.128355</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14807072518</styleUrl>
+			<name>Küstenschwalbe</name>
+			<Snippet maxLines="4">
+				Zoo Dählhölzli
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/bruno_hotz/14807072518/"><img src="http://farm6.staticflickr.com/5556/14807072518_366abd81f5.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/bruno_hotz/14807072518/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/bruno_hotz/14807072518/">Open photo page</a></td></tr></table>
+					Zoo Dählhölzli<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> January 30th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=62275744@N00&amp;format=kml_nl&amp;lang=en-us"><b>ponte1112</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=zoo&amp;format=kml_nl&amp;lang=en-us">zoo</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=schweiz&amp;format=kml_nl&amp;lang=en-us">schweiz</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=nikon&amp;format=kml_nl&amp;lang=en-us">nikon</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>7.449091,46.934838</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14970559536</styleUrl>
+			<name>Pombo (Solto na selva de pedra)</name>
+			<Snippet maxLines="4">
+				&lt;a href=&quot;http://500px.com/FaustoFa&quot; rel=&quot;nofollow&quot;&gt;500px.com/FaustoFa&lt;/a&gt;<br />
+&lt;a href=&quot;http://www.facebook.com/fausto.fae&quot; rel=&quot;nofollow&quot;&gt;www.facebook.com/fausto.fae&lt;/a&gt;
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/faustofae/14970559536/"><img src="http://farm4.staticflickr.com/3875/14970559536_dea9fa167d.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/faustofae/14970559536/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/faustofae/14970559536/">Open photo page</a></td></tr></table>
+					&lt;a href=&quot;http://500px.com/FaustoFa&quot; rel=&quot;nofollow&quot;&gt;500px.com/FaustoFa&lt;/a&gt;<br />
+&lt;a href=&quot;http://www.facebook.com/fausto.fae&quot; rel=&quot;nofollow&quot;&gt;www.facebook.com/fausto.fae&lt;/a&gt;<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> February 23rd, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=89518371@N03&amp;format=kml_nl&amp;lang=en-us"><b>Fausto Faé</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=blue&amp;format=kml_nl&amp;lang=en-us">blue</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=red&amp;format=kml_nl&amp;lang=en-us">red</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=brazil&amp;format=kml_nl&amp;lang=en-us">brazil</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=brown&amp;format=kml_nl&amp;lang=en-us">brown</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>-46.668889,-23.530278</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14806910550</styleUrl>
+			<name>Alba and the bird</name>
+			<Snippet maxLines="4">
+				That bird have been traveling around the world with them.
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/stockholmsfotografen/14806910550/"><img src="http://farm6.staticflickr.com/5552/14806910550_7b676ee140.jpg" /></a>
+					<table border="0" padding="0" width="333"><tr><td align="right"><a href="http://www.flickr.com/photos/stockholmsfotografen/14806910550/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/stockholmsfotografen/14806910550/">Open photo page</a></td></tr></table>
+					That bird have been traveling around the world with them.<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 21st, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=94033558@N05&amp;format=kml_nl&amp;lang=en-us"><b>Stockholmsfotografen</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=summer&amp;format=kml_nl&amp;lang=en-us">summer</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=vacation&amp;format=kml_nl&amp;lang=en-us">vacation</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=girl&amp;format=kml_nl&amp;lang=en-us">girl</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>18.160278,59.049553</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14993265845</styleUrl>
+			<name>Chevalier culblanc - Tringa ochropus (Domaine Des Oiseaux, Ariège) 21 Aout 2014 #1</name>
+			<Snippet maxLines="4">
+				Un inspecteur technique de vérification de nos nouveaux perchoirs à la Roselière...
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/christophe-ramos/14993265845/"><img src="http://farm4.staticflickr.com/3908/14993265845_513f5e6a6d.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/christophe-ramos/14993265845/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/christophe-ramos/14993265845/">Open photo page</a></td></tr></table>
+					Un inspecteur technique de vérification de nos nouveaux perchoirs à la Roselière...<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 21st, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=31845846@N04&amp;format=kml_nl&amp;lang=en-us"><b>Christophe.RAMOS</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=france&amp;format=kml_nl&amp;lang=en-us">france</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=canon&amp;format=kml_nl&amp;lang=en-us">canon</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=09&amp;format=kml_nl&amp;lang=en-us">09</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>1.656832,43.270112</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14806739798</styleUrl>
+			<name>Catching a lift</name>
+			<Snippet maxLines="4">
+				Heading off on the Dover Calais Ferry with company<br />
+<br />
+&lt;a href=&quot;https://wordpress.com/post/28831118/5101&quot; rel=&quot;nofollow&quot;&gt;wordpress.com/post/28831118/5101&lt;/a&gt;
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/bruciestokes/14806739798/"><img src="http://farm6.staticflickr.com/5577/14806739798_d650022743.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/bruciestokes/14806739798/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/bruciestokes/14806739798/">Open photo page</a></td></tr></table>
+					Heading off on the Dover Calais Ferry with company<br />
+<br />
+&lt;a href=&quot;https://wordpress.com/post/28831118/5101&quot; rel=&quot;nofollow&quot;&gt;wordpress.com/post/28831118/5101&lt;/a&gt;<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 8th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=8970099@N04&amp;format=kml_nl&amp;lang=en-us"><b>Bruce Stokes</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=animal&amp;format=kml_nl&amp;lang=en-us">animal</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=ferry&amp;format=kml_nl&amp;lang=en-us">ferry</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=day1&amp;format=kml_nl&amp;lang=en-us">day1</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>1.350605,51.120447</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14806619310</styleUrl>
+			<name>Martin-pêcheur d'Europe - Alcedo atthis (Domaine Des Oiseaux, Ariège) 21 Aout 2014 #1</name>
+			<Snippet maxLines="4">
+				Nouveaux perchoirs de la roselière validés ! La saison des Martins pêcheurs vient de démarrer au Domaine Des Oiseaux, vivement le beau temps pour profiter des quatre nouveaux perchoirs disposés à l'observatoire de la &amp;quot;Roselière&amp;quot;...! Un travail d'équipe réalisé avec Louis, Dany &amp;amp; Jessica ! <br />
+<br />
+NOUVEAU<br />
+Venez nous rejoindre sur FB &amp;gt; &lt;a href=&quot;https://www.facebook.com/ladddo&quot; rel=&quot;nofollow&quot;&gt;www.facebook.com/ladddo&lt;/a&gt;
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/christophe-ramos/14806619310/"><img src="http://farm6.staticflickr.com/5570/14806619310_ecb76b6f0e.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/christophe-ramos/14806619310/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/christophe-ramos/14806619310/">Open photo page</a></td></tr></table>
+					Nouveaux perchoirs de la roselière validés ! La saison des Martins pêcheurs vient de démarrer au Domaine Des Oiseaux, vivement le beau temps pour profiter des quatre nouveaux perchoirs disposés à l'observatoire de la &amp;quot;Roselière&amp;quot;...! Un travail d'équipe réalisé avec Louis, Dany &amp;amp; Jessica ! <br />
+<br />
+NOUVEAU<br />
+Venez nous rejoindre sur FB &amp;gt; &lt;a href=&quot;https://www.facebook.com/ladddo&quot; rel=&quot;nofollow&quot;&gt;www.facebook.com/ladddo&lt;/a&gt;<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 21st, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=31845846@N04&amp;format=kml_nl&amp;lang=en-us"><b>Christophe.RAMOS</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=france&amp;format=kml_nl&amp;lang=en-us">france</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=canon&amp;format=kml_nl&amp;lang=en-us">canon</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=09&amp;format=kml_nl&amp;lang=en-us">09</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>1.656832,43.270112</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14989947171</styleUrl>
+			<name>Common Yellowthroat</name>
+			<Snippet maxLines="4">
+				Common Yellowthroat (Geothlypis trichas) on the power line trail south of Elmwood Road, North Yarmouth, ME
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/jstormer/14989947171/"><img src="http://farm6.staticflickr.com/5582/14989947171_b0eafa606b.jpg" /></a>
+					<table border="0" padding="0" width="500"><tr><td align="right"><a href="http://www.flickr.com/photos/jstormer/14989947171/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/jstormer/14989947171/">Open photo page</a></td></tr></table>
+					Common Yellowthroat (Geothlypis trichas) on the power line trail south of Elmwood Road, North Yarmouth, ME<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 16th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=44983479@N02&amp;format=kml_nl&amp;lang=en-us"><b>jaybirding</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=me&amp;format=kml_nl&amp;lang=en-us">me</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=us&amp;format=kml_nl&amp;lang=en-us">us</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=sony&amp;format=kml_nl&amp;lang=en-us">sony</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>-70.221725,43.907572</coordinates>
+			</Point>
+		</Placemark>
+		
+				<Placemark>
+			<styleUrl>#styleMap/photo/14992665882</styleUrl>
+			<name>Pileated Woodpecker</name>
+			<Snippet maxLines="4">
+				Pileated Woodpecker (Dryocopus pileatus) male, at suet feeder on Rossmore Road, Brunswick, ME.
+			</Snippet> 
+  			<description>
+					<a href="http://www.flickr.com/photos/jstormer/14992665882/"><img src="http://farm6.staticflickr.com/5585/14992665882_f8f9d64f37.jpg" /></a>
+					<table border="0" padding="0" width="400"><tr><td align="right"><a href="http://www.flickr.com/photos/jstormer/14992665882/"><img width="13" height="10" src="http://l.yimg.com/g/images/simple_new_window_default.gif" /></a> <a href="http://www.flickr.com/photos/jstormer/14992665882/">Open photo page</a></td></tr></table>
+					Pileated Woodpecker (Dryocopus pileatus) male, at suet feeder on Rossmore Road, Brunswick, ME.<br />
+					<hr />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/spaceball.gif" /> <font color="#999999">Taken on</font> August 16th, 2014&amp;nbsp;<font color="#999999">by</font>&amp;nbsp;<a href="http://api.flickr.com/services/feeds/geo/?id=44983479@N02&amp;format=kml_nl&amp;lang=en-us"><b>jaybirding</b></a><br />
+					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_tag_left.gif" />  <a href="http://api.flickr.com/services/feeds/geo/?tags=bird&amp;format=kml_nl&amp;lang=en-us">bird</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=me&amp;format=kml_nl&amp;lang=en-us">me</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=us&amp;format=kml_nl&amp;lang=en-us">us</a>,&amp;nbsp; <a href="http://api.flickr.com/services/feeds/geo/?tags=sony&amp;format=kml_nl&amp;lang=en-us">sony</a> ...<br />					<img width="15" height="15" src="http://l.yimg.com/g/images/icon_public.gif" id="img_perms"/> <font color="#999999"> Anyone can see this location</font>
+			</description>
+			<Point>
+				<coordinates>-69.982017,43.869805</coordinates>
+			</Point>
+		</Placemark>
+
+</Document>
+</kml>

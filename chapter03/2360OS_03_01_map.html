@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Map Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+    // the normal setup for our samples
+    var layer = new ol.layer.Tile({
+        source: new ol.source.OSM()
+      });
+      var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+      var view = new ol.View({
+        center: london,
+        zoom: 6
+      });
+      var map = new ol.Map({
+        target: 'map',
+        layers: [layer],
+        view: view
+      });
+    </script>
+  </body>
+</html>

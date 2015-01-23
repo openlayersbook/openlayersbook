@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dom manipulation</title>
+  </head>
+  <body>
+    <ul id="my_layers_list">
+      <li>My first layer</li>
+      <li>My second layer</li>
+      <li>My third layer</li>
+      <li>My background or base layer</li>
+    </ul>
+    <script src='https://rawgit.com/google/closure-library/master/closure/goog/base.js'></script>
+    <script>
+      goog.require('goog.dom');
+    </script>
+    <script>
+      var my_layers_list = goog.dom.getElement('my_layers_list') ;
+      var myTitle = goog.dom.createDom('h1');
+      var myText = goog.dom.createTextNode("My simple layers list");
+      goog.dom.append(myTitle, myText);
+      goog.dom.insertSiblingBefore(myTitle, my_layers_list);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Vector Style Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+      // the icon style allows picking a section out of a larger image
+      var earthquakeStyle = new ol.style.Style({
+        image: new ol.style.Icon({
+          anchor: [0.5, 0.5],
+          size: [52, 52],
+          offset: [52, 0],
+          opacity: 1,
+          scale: 0.25,
+          src: '../assets/img/dots.png'
+        })
+      });
+      var countryStyle = new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: [0, 255, 255, 1]
+        }),
+        stroke: new ol.style.Stroke({
+          color: [127,127,127,1.0],
+          width: 1,
+          lineJoin: 'round'
+        })
+      });
+      var timezoneStyle = new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: [127,127,127,1.0],
+          width: 1,
+          lineJoin: 'round',
+          lineCap: 'round'
+        })
+      });
+      var countries = new ol.layer.Vector({
+        source: new ol.source.GeoJSON({
+          projection: 'EPSG:3857',
+          url: '../assets/data/countries.geojson'
+        }),
+        style: countryStyle
+      });
+      var timezones = new ol.layer.Vector({
+        source: new ol.source.KML({
+          projection: 'EPSG:3857',
+          url: '../assets/data/timezones.kml',
+          extractStyles: false
+        }),
+        style: timezoneStyle
+      });
+
+      var earthquakes = new ol.layer.Vector({
+        source: new ol.source.KML({
+          projection: 'EPSG:3857',
+          url: '../assets/data/earthquakes.kml',
+          extractStyles: false
+        }),
+        style: earthquakeStyle
+      });
+
+      var center = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+      var view = new ol.View({
+        center: center,
+        zoom: 1
+      });
+      var map = new ol.Map({
+        target: 'map',
+        layers: [countries, timezones, earthquakes],
+        view: view
+      });
+
+      earthquakes.once('render', function() {
+        view.fitExtent(earthquakes.getSource().getExtent(), map.getSize());
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Modify sample</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+
+      var raster = new ol.layer.Tile({
+        source: new ol.source.MapQuest({layer: 'sat'})
+      });
+
+      var selectEuropa = new ol.style.Style({
+          stroke: new ol.style.Stroke({
+          color: '#ff0000',
+          width: 2
+        })
+      });
+
+      var defaultEuropa = new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: '#0000ff',
+          width: 2
+        })
+      });
+
+      var vectorEuropa = new ol.layer.Vector({
+        id: 'europa',
+        source: new ol.source.GeoJSON({
+          projection: 'EPSG:3857',
+          url: '../assets/data/nutsv9_lea.geojson'
+        }),
+        style: defaultEuropa
+      });
+
+      var selectInteraction = new ol.interaction.Select({
+        condition: ol.events.condition.singleClick,
+        toggleCondition: ol.events.condition.shiftKeyOnly,
+        layers: function (layer) {
+          return layer.get('id') == 'europa';
+        },
+        style: selectEuropa
+      });
+
+      var modify = new ol.interaction.Modify({
+        features: selectInteraction.getFeatures()
+      });
+
+      var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+
+      var view = new ol.View({
+        center: london,
+        zoom: 6
+      });
+
+      var map = new ol.Map({
+        target: 'map'
+      });
+
+      map.addLayer(raster);
+      map.addLayer(vectorEuropa);
+      map.setView(view);
+
+      map.getInteractions().extend([selectInteraction, modify]);
+
+      var selected_features = selectInteraction.getFeatures();
+
+      var dirty = {};
+
+      selected_features.on('add', function(evt) {
+        var feature = evt.element;
+        var fid = feature.getId();
+        feature.on('change', function(evt) {
+          dirty[evt.target.getId()] = true;
+        });
+      });
+
+      selected_features .on('remove', function(evt) {
+        var feature = evt.element;
+        var fid = feature.getId();
+        if (dirty[fid]) {
+          console.log('changed');
+        }
+      });
+    </script>
+  </body>
+</html>

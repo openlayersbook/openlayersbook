@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hello OpenStreetMap</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+
+      var raster = new ol.layer.Tile({
+        source: new ol.source.MapQuest({layer: 'sat'})
+      });
+
+      var selectEuropa = new ol.style.Style({
+          stroke: new ol.style.Stroke({
+            color: '#ff0000',
+            width: 2
+        })
+      });
+
+      var defaultEuropa = new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: '#0000ff',
+          width: 2
+        })
+      });
+
+      var vectorEuropa = new ol.layer.Vector({
+        id: 'europa',
+        source: new ol.source.GeoJSON({
+          projection: 'EPSG:3857',
+          url: '../assets/data/nutsv9_lea.geojson'
+        }),
+        style: defaultEuropa
+      });
+
+      var defaultFrancePoints = new ol.style.Style({
+        image: new ol.style.Circle({
+          fill: new ol.style.Fill({
+            color: 'blue'
+          }),
+          stroke: new ol.style.Stroke({
+            color: '#ffcc00'
+          }),
+          radius: 8
+        })
+      });
+
+      var selectFrancePoints = new ol.style.Style({
+        image: new ol.style.Circle({
+          fill: new ol.style.Fill({
+            color: '#ff0000'
+          }),
+          stroke: new ol.style.Stroke({
+            color: '#ffccff'
+          }),
+          radius: 16
+        })
+      });
+
+      var vectorFrancePoints = new ol.layer.Vector({
+        id: 'france',
+        source: new ol.source.GeoJSON({
+          projection: 'EPSG:3857',
+          url: '../assets/data/france_4326.geojson'
+        }),
+        style: defaultFrancePoints
+      });
+
+      var selectInteraction = new ol.interaction.Select({
+        layers: function(layer) {
+          return layer.get('selectable') == true;
+        },
+        style: [selectFrancePoints, selectEuropa]
+      });
+
+      var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+
+      var view = new ol.View({
+        center: london,
+        zoom: 6
+      });
+
+      var map = new ol.Map({
+        target: 'map'
+      });
+
+      map.addLayer(raster);
+      map.addLayer(vectorEuropa);
+      map.addLayer(vectorFrancePoints);
+      map.setView(view);
+
+      map.getInteractions().extend([selectInteraction]);
+
+      vectorEuropa.set('selectable', true);
+      vectorFrancePoints.set('selectable', true);
+
+    </script>
+  </body>
+</html>

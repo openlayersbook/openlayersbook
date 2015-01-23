@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Drag 'n' Drop Vector Example</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol-debug.js"></script>
+    <script>
+      var tiledRaster = new ol.layer.Tile({
+        source: new ol.source.OSM()
+      });
+
+      var fill = new ol.style.Fill({
+        color: 'rgba(0,0,0,0.2)'
+      });
+
+      var stroke = new ol.style.Stroke({
+        color: 'rgba(0,0,0,0.4)'
+      });
+
+      var circle = new ol.style.Circle({
+        radius: 6,
+        fill: fill,
+        stroke: stroke
+      });
+
+      var vectorStyle = new ol.style.Style({
+        fill: fill,
+        stroke: stroke,
+        image: circle
+      });
+
+      // the draganddrop interaction allows us to drop files
+      // onto the browser window. If the file matches one of the
+      // format constructors, it will automatically extract
+      // the features from the file and trigger an event
+      var dragAndDrop = new ol.interaction.DragAndDrop({
+        formatConstructors: [
+          ol.format.GPX,
+          ol.format.GeoJSON,
+          ol.format.IGC,
+          ol.format.KML,
+          ol.format.TopoJSON
+        ]
+      });
+      // we can use the event to create a new vector source
+      // wiht the event's features and projection and add
+      // it to the map with a new vector layer
+      dragAndDrop.on('addfeatures', function(event) {
+        var vectorSource = new ol.source.Vector({
+          features: event.features,
+          projection: event.projection
+        });
+        map.addLayer(new ol.layer.Vector({
+          source: vectorSource,
+          style: vectorStyle
+        }));
+        var view = map.getView();
+        view.fitExtent(vectorSource.getExtent(), map.getSize());
+      });
+      var layer = new ol.layer.Tile({
+        source: new ol.source.OSM()
+      });
+      var center = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+      var view = new ol.View({
+        center: center,
+        zoom: 1
+      });
+      var map = new ol.Map({
+        target: 'map',
+        layers: [tiledRaster],
+        view: view
+      });
+      // we can add an interaction after creating the map with the default set
+      map.addInteraction(dragAndDrop);
+    </script>
+  </body>
+</html>

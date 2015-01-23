@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Vector Style Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol-debug.js"></script>
+    <script>
+      // a basic style for the country layer
+      var countryStyle = new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: [203, 194, 185, 1]
+        }),
+        stroke: new ol.style.Stroke({
+          color: [177, 163, 148, 0.5],
+          width: 2,
+          lineCap: 'round'
+        })
+      });
+
+      // a style for the timezones, adding some text
+      var timezoneStyle = new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: [64, 200, 200, 0.5],
+          width: 1
+        }),
+        text: new ol.style.Text({
+          font: '20px Verdana',
+          text: 'TZ',
+          fill: new ol.style.Fill({
+            color: [64, 64, 64, 0.75]
+          })
+        })
+      });
+
+      var countries = new ol.layer.Vector({
+        source: new ol.source.GeoJSON({
+          projection: 'EPSG:3857',
+          url: '../assets/data/countries.geojson'
+        }),
+        style: countryStyle
+      });
+
+      // make sure we don't use the styles in the KML layer
+      var timezones = new ol.layer.Vector({
+        source: new ol.source.KML({
+          projection: 'EPSG:3857',
+          url: '../assets/data/timezones.kml',
+          extractStyles: false
+        }),
+        style: timezoneStyle
+      });
+      var center = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+      var view = new ol.View({
+        center: center,
+        zoom: 1
+      });
+      var map = new ol.Map({
+        target: 'map',
+        layers: [countries, timezones],
+        view: view
+      });
+    </script>
+  </body>
+</html>

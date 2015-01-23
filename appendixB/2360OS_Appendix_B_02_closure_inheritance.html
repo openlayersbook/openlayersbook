@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inheritance</title>
+    <script src='https://rawgit.com/google/closure-library/master/closure/goog/base.js'></script>
+  </head>
+  <body>
+  <script>
+    //Parent Class
+    goog.provide('myNamespace.layer.Layer');
+    /**
+     * @constructor
+     */
+    myNamespace.layer.Layer = function (options) {
+        this.color_ = options.color || 'grey';
+    };
+    myNamespace.layer.Layer.prototype.getColor = function() {
+        return this.color_;
+    };
+
+    //Sub Class
+    goog.provide('myNamespace.layer.Vector');
+    /**
+     * @constructor
+     * @extends {myNamespace.layer.Layer}
+     */
+    myNamespace.layer.Vector = function (options) {
+      goog.base(this, options);
+      if (options.style) {
+	      this.style_ = options.style;
+      }
+    };
+
+    goog.inherits(myNamespace.layer.Vector, myNamespace.layer.Layer);
+
+    //Create a new instance of Vector layer and call to method from parent class.
+    var myVector = new myNamespace.layer.Vector({
+        color: 'white',
+	      style: 'myStyle'
+    });
+    console.log(myVector.getColor());
+  </script>
+  </body>
+</html>

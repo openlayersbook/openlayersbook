@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Vector Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol-debug.js"></script>
+    <script>
+      var tiledRaster = new ol.layer.Tile({
+        source: new ol.source.OSM()
+      });
+
+      // style for the vector layer
+      var fill = new ol.style.Fill({
+        color: 'rgba(0,0,0,0.2)'
+      });
+
+      var stroke = new ol.style.Stroke({
+        color: 'rgba(0,0,0,0.4)'
+      });
+
+      var circle = new ol.style.Circle({
+        radius: 6,
+        fill: fill,
+        stroke: stroke
+      });
+
+      var vectorStyle = new ol.style.Style({
+        fill: fill,
+        stroke: stroke,
+        image: circle
+      });
+
+      var center = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+      var view = new ol.View({
+        center: center,
+        zoom: 1,
+        projection: 'EPSG:3857'
+      });
+      var map = new ol.Map({
+        renderer: 'canvas',
+        target: 'map',
+        view: view,
+        layers: [tiledRaster]
+      });
+
+      // use the jQuery ajax method to load local data. The return value
+      // is an object called a promise that provides a done method that
+      // will be called when the asynchronous operation is complete
+      var promise = jQuery.ajax('../assets/data/countries.geojson');
+      promise.done(function(data) {
+        // to load the data, we'll manually extract it using a format
+        // object rather than providing the format to a source
+        var format = new ol.format.GeoJSON({
+          defaultProjection: 'EPSG:4326'
+        });
+        // the format reads the features
+        var features = format.readFeatures(data);
+        // and the projection
+        var featureProjection = format.readProjection(data);
+        // then we can get the view's projection and transform the
+        // feature geometries
+        var projection = view.getProjection();
+        var transform = ol.proj.getTransform(featureProjection, projection);
+        for (var i = 0, ii = features.length; i < ii; ++i) {
+          var feature = features[i];
+          var geometry = feature.getGeometry();
+          geometry.applyTransform(transform);
+        }
+        // now we can create a source and layer, add the layer to
+        // the map and zoom to the extent of the features
+        var vectorSource = new ol.source.Vector({
+          projection: projection,
+          features: features
+        });
+        var vectorLayer = new ol.layer.Vector({
+          source: vectorSource,
+          style: vectorStyle
+        });
+        map.addLayer(vectorLayer);
+        view.fitExtent(vectorSource.getExtent(), map.getSize());
+      });
+    </script>
+  </body>
+</html>

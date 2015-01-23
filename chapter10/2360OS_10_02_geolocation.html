@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Map Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+    <!-- font-awesome is an iconic font, which means we can draw resolution-independent icons -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="map" class="full-map"></div>
+    <div id="location" class="marker"><span class="icon-flag"></div>
+    <script src="../assets/ol3/js/ol-debug.js"></script>
+    <script>
+      var layer = new ol.layer.Tile({
+        source: new ol.source.OSM()
+      });
+
+      var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+
+      var view = new ol.View({
+        center: london,
+        zoom: 6
+      });
+
+      var map = new ol.Map({
+        target: 'map',
+        layers: [layer],
+        view: view
+      });
+
+      // create an Overlay using the div with id location.
+      var marker = new ol.Overlay({
+        element: document.getElementById('location'),
+        positioning: 'bottom-left',
+        stopEvent: false
+      });
+
+      // add it to the map
+      map.addOverlay(marker);
+
+      // create a Geolocation object setup to track the position of the device
+      var geolocation = new ol.Geolocation({
+        tracking: true
+      });
+
+      // bind the projection to the view so that positions are reported in the
+      // projection of the view
+      geolocation.bindTo('projection', view);
+
+      // bind the marker's position to the geolocation object, the marker will
+      // move automatically when the GeoLocation API provides position updates
+      marker.bindTo('position', geolocation);
+
+      // when the GeoLocation API provides a position update, center the view
+      // on the new position
+      geolocation.on('change:position', function() {
+        var p = geolocation.getPosition();
+        console.log(p[0] + ' : ' + p[1]);
+        view.setCenter([parseFloat(p[0]), parseFloat(p[1])]);
+      });
+    </script>
+  </body>
+</html>

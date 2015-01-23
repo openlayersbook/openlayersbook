@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Vector Style Examples</title>
+    <link rel="stylesheet" href="../assets/ol3/css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/samples.css" type="text/css" />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="../assets/ol3/js/ol.js"></script>
+    <script>
+      var shadowStyle = new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: [0, 0, 127, 0.15],
+          width: 8
+        }),
+        zIndex: 1
+      });
+      var countryStyle = new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: [203, 194, 185, 1]
+        }),
+        stroke: new ol.style.Stroke({
+          color: [101, 95, 90, 1],
+          width: 1,
+          lineCap: 'round'
+        }),
+        zIndex: 2
+      });
+      // mulitple styles can be combined by using an array of them.
+      // the order in the array matters!
+      var countries = new ol.layer.Vector({
+        source: new ol.source.GeoJSON({
+          projection: 'EPSG:3857',
+          url: '../assets/data/countries.geojson'
+        }),
+        style: [shadowStyle, countryStyle]
+      });
+      var center = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+      var view = new ol.View({
+        center: center,
+        zoom: 1
+      });
+      var map = new ol.Map({
+        target: 'map',
+        layers: [countries],
+        view: view
+      });
+    </script>
+  </body>
+</html>

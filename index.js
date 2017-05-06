@@ -16,8 +16,10 @@ var port = argv.port || process.env.PORT || 3000;
 app.use(logger('dev'));
 
 // Declare for parsing requests
-app.use(bodyParser());
-
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 app.get('/features.geojson', function(request, response) {
   response.contentType('application/json');
